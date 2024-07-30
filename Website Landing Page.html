@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwando's Responsive Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #FB773C;
+            background-color: #180161;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4F1787;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #EB3678 3px solid;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header .logo {
+            float: left;
+            font-size: 24px;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header nav a:hover, header nav a.active {
+            color: #EB3678;
+        }
+        header.scrolling-active {
+            background: #FB773C;
+        }
+        .hero {
+            background: url('https://in.pinterest.com/pin/1096767315486380486/') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-family: 'Horizon', sans-serif;
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        .hero a {
+            display: inline-block;
+            background: #EB3678;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 18px;
+        }
+        .hero a:hover {
+            background: #FB773C;
+        }
+        .about, .footer {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about h2, .footer h2 {
+            font-family: 'Horizon', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about p, .footer p {
+            font-size: 18px;
+            color: #FB773C;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .about .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about img {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer a {
+            color: #EB3678;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .footer a:hover {
+            color: #FB773C;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav ul {
+                padding: 0;
+            }
+            header nav li {
+                display: block;
+                padding: 10px 0;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+            .hero a {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            .about h2, .footer h2 {
+                font-size: 28px;
+            }
+            .about p, .footer p {
+                font-size: 16px;
+            }
+            .footer a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mwando's Page</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Mwando's Responsive Landing Page</h1>
+            <p>I’m an aspiring student studying b.tech in computer science hoping to become the best software engineer and one day own my own company.</p>
+            <a href="#about">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="content">
+                <p>I’m an aspiring student studying b.tech in computer science hoping to become the best software engineer and one day own my own company. I am dedicated, hardworking, and passionate about technology.</p>
+                <img src="data:image/jpeg;base64,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
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Follow me on social media:</p>
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
+            <p>&copy; 2024 Mwando. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            var windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        });
+
+        document.querySelectorAll('header nav a').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                this.style.color = '#EB3678';
+            });
+            link.addEventListener('mouseout', function() {
+                this.style.color = 'white';
+            });
+        });
+    </script>
+
+</body>
+</html>
